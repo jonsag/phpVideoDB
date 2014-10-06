@@ -1,0 +1,26 @@
+	create database
+# mysql -u root -pxp3200xp < create-database.sql
+
+  	database name: videos   
+	database user: videos
+	database password: videopass
+
+
+  	add tables to database
+# mysql -u videos -pvideopass jsvideos < create-tables.sql
+
+  	database videos contains:
+	id	 	unique id number
+	fileName	path/filename
+	md5sum		hash for file
+	duration	length in seconds
+	height		height in pixels
+	width		width in pixels
+	fileSize	filesize in bytes
+	aspectRatio	aspect ratio
+	videoCodec
+	audioCodec
+	videoBitrate
+	audioBitrate
+	overallBitrate
+	frameRate
